@@ -40,9 +40,9 @@ cd am-nodejs-proxy
 
 | Action |  Sub-Action   |         Command         |                  Description                   |
 | :----: | :-----------: | :---------------------: | :--------------------------------------------: |
-| setup  |   xray/node   | `./start.sh setup xray` |       Setup services in a single command       |
-| check  |   xray/node   | `./start.sh check xray` |     Checks Cloudflared and other services      |
-|  show  | xray/node/all | `./start.sh show xray`  | Displays VLESS connection links from node/.env |
+| setup  |   xray/node   | `./start.sh setup xray` |      通过单个命令设置服务       |
+| check  |   xray/node   | `./start.sh check xray` |    检查 Cloudflared 和其他服务      |
+|  show  | xray/node/all | `./start.sh show xray`  | 显示来自 node/.env 的 VLESS 连接链接 |
 
 ***NODE.JS 和 XRAY 不能同时处于活动状态。一次只能运行其中一个。***
 
