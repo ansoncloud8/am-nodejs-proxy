@@ -1,29 +1,28 @@
 # am-nodejs-proxy
 基于 Node.js 的 vless 实现包。它在各种 Node.js 环境中都能运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。同时，它也适用于各种 PaaS 平台，如：replit、heroku 等。
 
-[中文文档](./README_CN.md) 
 
-This README explains how to set up and use the `start.sh` script to manage the project components.
+本自述文件解释了如何设置和使用“start.sh”脚本来管理项目组件。
 
-## Initial Setup
+## 初始设置
 
-1. Connect to your host using SSH:
+1. 使用 SSH 连接到您的主机：
 
 ```
 ssh <username>@<panel>.serv00.com
 ```
 
-Use the information emailed to you by serv00.
+使用 serv00 通过电子邮件发送给您的信息。
 
-2. Enable management permissions:
+2. 启用管理权限：
 
 ```
 devil binexec on
 ```
 
-***AFTER THIS STEP, EXIT FROM SSH AND LOG IN AGAIN.***
+***完成此步骤后，退出 SSH 并再次登录。***
 
-3. Clone the repository:
+3. 克隆仓库代码：
 
 ```
 cd domains/<username>.serv00.net
@@ -31,9 +30,9 @@ git clone https://github.com/ansoncloud8/am-nodejs-proxy.git
 cd am-nodejs-proxy
 ```
 
-## Usage
+## 使用
 
-To use the script, run:
+要使用该脚本，请运行：
 
 ```
 ./start.sh <action> <sub-action>
@@ -45,40 +44,40 @@ To use the script, run:
 | check  |   xray/node   | `./start.sh check xray` |     Checks Cloudflared and other services      |
 |  show  | xray/node/all | `./start.sh show xray`  | Displays VLESS connection links from node/.env |
 
-***NODE.JS AND XRAY CANNOT BE ACTIVE SIMULTANEOUSLY. ONLY ONE OF THEM SHOULD BE RUNNING AT A TIME.***
+***NODE.JS 和 XRAY 不能同时处于活动状态。一次只能运行其中一个。***
 
-## Checking Sessions
+## 检查会话
 
-To check the status of a specific component, you can attach to its tmux session:
+要检查特定组件的状态，您可以附加到其 tmux 会话：
 
 ```
 tmux attach -t <session>
 ```
 
-Replace `<session>` with:
+将 `<session>` 替换为：
 
 - `cf` for Cloudflared
 - `node` for Node.js
 - `xray` for Xray
 
-For example, to check the Cloudflared session:
+例如，要检查 Cloudflared 会话：
 
 ```
 tmux attach -t cf
 ```
 
-To detach from a tmux session without closing it, press:
+要从 tmux 会话分离而不关闭它，请按：
 
 ```
-Ctrl + b, then d
+Ctrl + b, 然后是 d
 ```
 
-This key combination allows you to exit the session while leaving it running in the background.
+此组合键允许您退出会话，同时使其在后台运行。
 
 ## Notes
 
-- The script uses tmux to manage sessions for each component.
-- Cron jobs are set up for periodic maintenance of Node.js and Xray.
-- Cloudflared, Node.js, and Xray configurations are generated automatically.
-- The script includes functions for port management and cleanup.
+- 该脚本使用 tmux 来管理每个组件的会话。
+- 设置 Cron 作业用于定期维护 Node.js 和 Xray。
+- Cloudflared、Node.js 和 Xray 配置自动生成。
+- 该脚本包括端口管理和清理功能。
 
