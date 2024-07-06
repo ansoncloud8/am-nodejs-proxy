@@ -1,0 +1,19 @@
+{
+  "name": "am-nodejs-proxy-ws",
+  "version": "1.0.0",
+  "description": "Deploy vless nodes on Serv00 free hosting website,YouTube频道：https://youtube.com/@AM_CLUB ,GitHub频道：https://github.com/ansoncloud8 ,交流频道：https://t.me/AM_CLUBS",
+  "author": "AM科技",
+  "main": "index.js",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "ws": "latest"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
