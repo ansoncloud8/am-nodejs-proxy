@@ -11,8 +11,8 @@ const { TextDecoder } = require('util')
 const { WebSocket, createWebSocketStream } = require('ws')
 
 // Constants
-const serverID = process.env.ID
-const serverPort = process.env.PORT
+const serverID = (process.env.ID || '5e8a4d1b-5c61-4af3-9eea-7038b7c8f2bc').replace(/-/g, '');
+const serverPort = process.env.PORT || 40001;
 
 // Define logging and error callback function
 const log = (type, ...args) => console[type](`[${new Date().toISOString()}] ${type.toUpperCase()}:`, ...args)
