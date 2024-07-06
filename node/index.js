@@ -4,6 +4,7 @@
 *- VLESS订阅地址：https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655
 *- Github仓库地址：https://github.com/ansoncloud8
 **/
+
 // Required modules
 require('dotenv').config()
 const net = require('net')
@@ -11,8 +12,8 @@ const { TextDecoder } = require('util')
 const { WebSocket, createWebSocketStream } = require('ws')
 
 // Constants
-const serverID = (process.env.ID || '5e8a4d1b-5c61-4af3-9eea-7038b7c8f2bc').replace(/-/g, '');
-const serverPort = process.env.PORT || 40001;
+const serverID = process.env.ID
+const serverPort = process.env.PORT
 
 // Define logging and error callback function
 const log = (type, ...args) => console[type](`[${new Date().toISOString()}] ${type.toUpperCase()}:`, ...args)
