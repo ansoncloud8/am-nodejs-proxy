@@ -47,9 +47,10 @@ To use the script, run:
 
 | Action |  Sub-Action   |         Command         |                  Description                   |
 | :----: | :-----------: | :---------------------: | :--------------------------------------------: |
-| setup  |   xray/node   | `./start.sh setup xray` |       Setup services in a single command       |
-| check  |   xray/node   | `./start.sh check xray` |     Checks Cloudflared and other services      |
-|  show  | xray/node/all | `./start.sh show xray`  | Displays VLESS connection links from node/.env |
+| setup  |  node/xray/cf   | `./start.sh setup node` |       Setup services in a single command       |
+| check  |  node/xray/cf   | `./start.sh check node` |     Checks Cloudflared and other services      |
+|  show  | node/xray/all | `./start.sh show node`  | Displays VLESS connection links from node/.env |
+|  reset  | all | `./start.sh reset all`  | Reset services in a single command     |
 
 ***NODE.JS AND XRAY CANNOT BE ACTIVE SIMULTANEOUSLY. ONLY ONE OF THEM SHOULD BE RUNNING AT A TIME.***
 
