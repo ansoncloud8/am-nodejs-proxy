@@ -90,3 +90,10 @@ Ctrl + b, 然后是 d
 - Cloudflared、Node.js 和 Xray 配置自动生成。
 - 该脚本包括端口管理和清理功能。
 
+ # 
+<details><summary><strong> [点击展开] 赞赏支持 ~🧧</strong></summary>
+*我非常感谢您的赞赏和支持，它们将极大地激励我继续创新，持续产生有价值的工作。*
+  
+- **TRC20:** `TWTxUyay6QJN3K4fs4kvJTT8Zfa2mWTwDD`
+  
+</details>
