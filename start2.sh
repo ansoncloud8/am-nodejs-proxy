@@ -53,12 +53,14 @@ function reset_services() {
 function init() {
     devil binexec on
     reset
-    prepare_cloudflared
-    prepare_node
-    prepare_xray
+    # prepare_cloudflared
+    # prepare_node
+    # prepare_xray
 }
 
 function run_cloudflared() {
+    prepare_cloudflared
+    
     local uuid=$(uuidgen)
     local port=$(reserve_port)
     local id=$(echo $uuid | tr -d '-')
@@ -72,6 +74,8 @@ function run_cloudflared() {
 }
 
 function run_node() {
+    prepare_node
+    
     local session="node"
     tmux kill-session -t $session
     tmux new-session -s $session -d "cd $base_dir/node && node index.js 2>&1 | tee $base_dir/node/session_$session.log"
@@ -79,6 +83,8 @@ function run_node() {
 }
 
 function run_xray() {
+    prepare_xray
+    
     local session="xray"
     tmux kill-session -t $session
     tmux new-session -s $session -d "cd $base_dir/xray && ./xray 2>&1 | tee $base_dir/xray/session_$session.log"
