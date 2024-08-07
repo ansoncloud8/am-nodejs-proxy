@@ -1,5 +1,8 @@
-# am-nodejs-proxy
-https://github.com/ansoncloud8/am-nodejs-proxy
+# [am-nodejs-proxy](https://github.com/ansoncloud8/am-nodejs-proxy)
+▶️ **新人[YouTube](https://youtube.com/@AM_CLUB)** 需要您的支持，请务必帮我**点赞**、**关注**、**打开小铃铛**，***十分感谢！！！*** ✅
+</br>🎁 不要只是下载或Fork。请 **follow** 我的GitHub、给我所有项目一个 **Star** 星星（拜托了）！你的支持是我不断前进的动力！ 💖
+</br>✅**解锁更多技术请访问[【个人博客】](https://am.809098.xyz)**
+#
 
 基于 Node.js 的 vless 实现包。它在各种 Node.js 环境中都能运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。同时，它也适用于各种 PaaS 平台，如：replit、heroku 等。
 
