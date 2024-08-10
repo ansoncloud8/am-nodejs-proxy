@@ -58,6 +58,11 @@ cd am-nodejs-proxy
 | check  |   node/xray/cf   | `./start.sh check node` |    检查 Cloudflared 和其他服务      |
 |  show  | node/xray/all | `./start.sh show node`  | 显示来自 node/.env 的 VLESS 连接链接 |
 
+查看所有节点信息
+```
+cat domains/${USER}.serv00.net/am-nodejs-proxy/node/.env
+```
+
 ***NODE.JS 和 XRAY 不能同时处于活动状态。一次只能运行其中一个。***
 
 ## 检查会话
