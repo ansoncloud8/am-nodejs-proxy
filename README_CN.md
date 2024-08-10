@@ -22,7 +22,7 @@ https://github.com/ansoncloud8/am-nodejs-proxy
 ssh <username>@<panel>.serv00.com
 ```
 
-使用 serv00 通过电子邮件发送给您的信息。
+使用 serv00 通过电子邮件发送给您的信息,上面的username、panel换成你接收的信息。
 
 2. 启用管理权限：
 
@@ -35,8 +35,12 @@ devil binexec on
 3. 克隆仓库代码：
 
 ```
-cd domains/<username>.serv00.net
+cd domains/${USER}.serv00.net
+```
+```
 git clone https://github.com/ansoncloud8/am-nodejs-proxy.git
+```
+```
 cd am-nodejs-proxy
 ```
 
