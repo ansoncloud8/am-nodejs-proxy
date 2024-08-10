@@ -37,8 +37,12 @@ devil binexec on
 3. Clone the repository:
 
 ```
-cd domains/<username>.serv00.net
+cd domains/${USER}.serv00.net
+```
+```
 git clone https://github.com/ansoncloud8/am-nodejs-proxy.git
+```
+```
 cd am-nodejs-proxy
 ```
 
