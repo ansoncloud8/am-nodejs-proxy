@@ -60,6 +60,11 @@ To use the script, run:
 | check  |  node/xray/cf   | `./start.sh check node` |     Checks Cloudflared and other services      |
 |  show  | node/xray/all | `./start.sh show node`  | Displays VLESS connection links from node/.env |
 
+View all node information
+```
+cat domains/${USER}.serv00.net/am-nodejs-proxy/node/.env
+```
+
 ***NODE.JS AND XRAY CANNOT BE ACTIVE SIMULTANEOUSLY. ONLY ONE OF THEM SHOULD BE RUNNING AT A TIME.***
 
 ## Checking Sessions
